@@ -6,7 +6,7 @@ function randomText(){
 function rain(){
     let cloud = document.querySelector('.cloud');
     let e = document.createElement('div');
-    let left = Math.floor(Math.random() * 320);
+    let left = Math.floor(Math.random() * 310);
     let size = Math.random() * 1.5;
     let durantion = Math.random() * 1;
     e.classList.add('text');
@@ -14,7 +14,7 @@ function rain(){
     e.innerText = randomText()
     e.style.left = left + 'px';
     e.style.fontSize = 0.5+size+'em';
-    e.style.animationDuration = 1+durantion + 's';
+    e.style.animationDuration = 1+durantion+'s';
 
 
     setTimeout(function(){
