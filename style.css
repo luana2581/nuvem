@@ -21,8 +21,9 @@ body{
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, transparent, transparent, #0005);
 }
-.clound {
+.cloud {
     padding: relative;
+    top: 50px;
     width: 320px;
     height: 100px;
     background: #fff;
@@ -30,7 +31,7 @@ body{
     z-index: 100;
     filter: drop-shadow(0 0 35px #fff);
 }
-.clound::before{
+.cloud::before{
     content: '';
     position: absolute;
     top: -50px;
@@ -42,5 +43,26 @@ body{
     box-shadow: 90px 0 0 30px #fff;
 }
 .text{
-    
+    position: absolute;
+    top: 40px;
+    height: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 30px #fff;
+    transform-origin: bottom;
+    animation: animate 2s linear forwards;
+}
+@keyframes animate{
+    0%{
+    transform: translateY(0) scale(1);
+}
+70%
+{
+    transform: translateY(290px) scale(1);
+}
+100%
+{
+    transform: translateY(290px) scale(0);
+}
 }
